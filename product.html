@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="paymentForm" action="https://payavo.in/processing_order.php" method="post" class="payform">
+        <div class="mb-3">
+            
+            <input type="hidden" value='RJ' class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            
+            <input type="hidden" value='66811' class="form-control" id="phone" name="phone">
+        </div>
+        <div class="mb-3">
+            
+            <input type="hidden" class="form-control" id="amount" name="amount" value="500">
+        </div>
+        <div class="mb-3">
+            
+            <input type="hidden" class="form-control" id="orderid" name="orderid" value="<?= rand(11111, 99999) ?>">
+        </div>
+        <div class="mb-3">
+            
+            <textarea class="form-control" id="text" name="text" rows="3"></textarea>
+        </div>
+        <input type="hidden" name="surl" value="thank_you.php">
+        <input type="hidden" name="furl" value="thank_you.php">
+        <input type="hidden" name="upi" value="9034664487@icici">
+        <button type="submit" class="btn btn-primary col-md-6 col-12">Pay Now</button>
+    </form>
+</body>
+</html>

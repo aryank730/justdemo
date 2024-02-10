@@ -1,0 +1,20 @@
+.pro-head{
+   font-size: 24px;
+   font-weight: 600;
+}
+
+.dispro{
+   text-align: left;
+   float: left;
+   font-size: 17px;
+   margin: 0rem 2rem ;
+}
+
+.text-danger{
+   font-size: 16px;
+   margin: 1rem;
+}
+
+.cardbutt{
+   padding: 0.5rem 1rem;
+}
